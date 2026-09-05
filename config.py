@@ -1,6 +1,7 @@
 # Konfigurasjon for vaer-api
+import os
 DEBUG = True
 
-# TODO: flytt disse ut av koden for produksjon!
-API_KEY = "flag4"
-DB_PASSWORD = "sommer2026"
+# Hemmeligheter hentes na fra miljovariabler
+API_KEY = os.environ.get("API_KEY")
+DB_PASSWORD = os.environ.get("DB_PASSWORD")
